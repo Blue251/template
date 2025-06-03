@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MangaTrove</title>
+  <style>
+    /* Reset some styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin: 1rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .search-bar {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input {
+      padding: 0.5rem;
+      width: 200px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .manga-section {
+      margin-bottom: 2rem;
+    }
+
+    .manga-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .manga-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .manga-item {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .manga-item:hover {
+      transform: scale(1.05);
+    }
+
+    .manga-item img {
+      max-width: 150px;
+      max-height: 250px;
+      object-fit: contain;
+      display: block;
+      margin: 0.5rem auto;
+    }
+
+    .manga-item h3 {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MangaTrove</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="latest.html">Latest Manga</a>
+      <a href="hot.html">Hot Manga</a>
+      <a href="new.html">New Manga</a>
+      <a href="completed.html">Completed Manga</a>
+      <a href="#">Request Manga</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search manga...">
+      <button type="submit">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="manga-section">
+      <h2>Popular Manga</h2>
+      <div class="manga-grid">
+        <div class="manga-item">
+          <img src="https://m.media-amazon.com/images/I/816hywlmu-L._SL1500_.jpg" alt="Solo Leveling Volume 1 Cover" />
+          <h3>Solo Leveling</h3>
+        </div>
+        <div class="manga-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/The_Beginning_After_the_End_webtoon_volume_1_cover.jpg" alt="The Beginning After The End Volume 1 Cover" />
+          <h3>The Beginning After The End</h3>
+        </div>
+        <!-- Add more manga items as needed -->
+      </div>
+    </section>
+
+    <section class="manga-section">
+      <h2>Latest Releases</h2>
+      <div class="manga-grid">
+        <!-- Add latest manga items here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 MangaTrove. All rights reserved.
+  </footer>
+
+</body>
+</html>
